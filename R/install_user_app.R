@@ -139,7 +139,7 @@ install_user_app <- function(library_path = NULL,
   message("Installing your Shiny package into electricShine framework.")
 
   system_install_pkgs(rscript_path)
-  install.packages('remotes', repos='http://cran.us.r-project.org')
+  
   on.exit({
     Sys.setenv(R_LIBS=old_R_LIBS)
     Sys.setenv(R_LIBS_USER=old_R_LIBS_USER)
